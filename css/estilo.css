@@ -1,0 +1,88 @@
+body{ /*Etiqueta de httml*/
+    margin:0; /* Quitar margenes */
+    padding:0; /* Espaciados internos */
+    background: #fff8f0; /*Para los fondos*/
+}
+
+.name{
+    width: 100%;
+    height: 300px;
+    background: #ff0000;
+    transform: skewY(-5deg);
+    
+}
+
+.content{
+    width: 50%;
+    height: 50%;
+    position: absolute; /*Mover a cualquier lado*/
+    left: 25%;/*Mover a la izquierda*/
+
+}
+.img{
+    position: absolute;
+    top: 18%;
+    right: 5%;
+    width: 180px;
+    height: 180px;
+    border-radius: 0;
+    transform: skewY(5grad);
+    overflow: hidden;
+}
+.img img{
+    width: 180px;
+    height: 200px;
+}
+
+.p-1{
+    color: black; /*Color para el texto*/
+    font-family: 'Baloo Tamma 2',sans-serif;
+    font-weight: bolder;/*Colocarla en negrilla la letra,cursiva o delgada*/
+    font-size: 45px;
+    transform: skewY(5deg);
+    margin-bottom: 0%;
+}
+
+.p-2{
+    color: black; /*Color para el texto*/
+    font-family: 'Baloo Tamma 2',sans-serif;
+    font-weight: bolder;/*Colocarla en negrilla la letra,cursiva o delgada*/
+    font-size: 35px;
+    transform: skewY(5deg);
+    margin-top: 0;
+    margin-bottom: 0%;
+}
+
+.info{
+    width: 90%;
+    height: auto;
+    background: #ff0000;
+    margin:5% auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.tituloSeccion{
+    color:black;
+    font-family: 'Baloo Tamma 2',sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bolder;
+    border-bottom: 2px white dashed;
+}
+.tituloInfo{
+    color:black;
+    font-family: 'Baloo Tamma 2',sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    display:inline ;
+    margin-right: 20px;
+}
+
+.infoInfo{
+    color:gray;
+    font-family: 'Baloo Tamma 2',sans-serif;
+    font-weight: normal;
+    font-size: large;
+    display:inline ;
+}
