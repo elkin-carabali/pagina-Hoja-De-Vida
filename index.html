@@ -8,7 +8,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="name">
+
+    <nav style="z-index: 100;">
+        <button class="nav-boton" onclick="accion()">Menú</button>
+
+        <a href="#name" class="nav-enlace desaparece">Inicio</a>
+        <a href="#InformaciónPersonal" class="nav-enlace desaparece">Información Personal</a>
+        <a href="#ExperienciaLaboral" class="nav-enlace desaparece">Experiencia Laboral</a>
+        <a href="#Educacióninformación" class="nav-enlace desaparece">Educación e información</a>
+        <a href="#Aptitudes" class="nav-enlace desaparece">Aptitudes, pasatiempos y Lenguajes</a>
+        
+    </nav>
+
+
+    <script>
+        function accion() {
+
+            console.log('está funcionando mi boton');
+            var ancla = document.getElementsByClassName('nav-enlace');
+            for (var i = 0; i < ancla.length; i++) {
+                ancla[i].classList.toggle('desaparece');
+            }
+        }
+    </script>
+
+
+
+    <div class="name" id="name" >
         <div class="img">
             <img src="a7161c19-e3e9-4713-b179-1633b6298ed0.jfif" alt="">
         </div>
@@ -17,7 +43,8 @@
             <p class="p-2">24 años, Pregrado en Tecnología</p>
         </div>
     </div>
-    <div class="info">
+    
+    <div class="info" id="InformaciónPersonal">
         <p class="tituloSeccion">Información Personal</p>
         <p class="tituloInfo">Nombres y apellidos:</p>
         <p class="infoInfo">Elkin Fabian Carabali Hinestroza</p><br>
@@ -32,13 +59,13 @@
 
 
     </div>
-    <div class="info">
+    <div class="info" id="ExperienciaLaboral">
         <p class="tituloSeccion">Experiencia Laboral</p>
         <p class="tituloInfo">MyM Bobinados Industriales LTDA:</p>
         <p class="infoInfo">Labore como mecánico en motores eléctricos industriales alrededor de 12 meses</p>
 
     </div>
-    <div class="info">
+    <div class="info" id="Educacióninformación">
         <p class="tituloSeccion">Educación e información</p>
         <p class="tituloInfo">LITECOM:</p>
         <p class="infoInfo">Bachiller técnico en asistencia administrativa</p><br>
@@ -46,7 +73,7 @@
         <p class="infoInfo">Tecnólogo en Mantenimiento mecánico industrial</p><br>
 
     </div>
-    <div class="info">
+    <div class="info" id="Aptitudes">
         <p class="tituloSeccion">Aptitudes y pasatiempos</p>
         <p class="tituloInfo">Aptitudes:</p>
         <p class="infoInfo">Soy una persona activa, me gusta trabajar en equipo, relacionarme, cumplido y me gusta aprender</p><br>

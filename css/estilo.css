@@ -2,6 +2,7 @@ body{ /*Etiqueta de httml*/
     margin:0; /* Quitar margenes */
     padding:0; /* Espaciados internos */
     background: #fff8f0; /*Para los fondos*/
+    padding-top: 13rem;
 }
 
 .name{
@@ -17,6 +18,7 @@ body{ /*Etiqueta de httml*/
     height: 50%;
     position: absolute; /*Mover a cualquier lado*/
     left: 25%;/*Mover a la izquierda*/
+   
 
 }
 .img{
@@ -85,4 +87,62 @@ body{ /*Etiqueta de httml*/
     font-weight: normal;
     font-size: large;
     display:inline ;
+}
+
+/* //////////////////////////////////////////////////////////////////////// */
+
+.nav-enlace{
+    z-index: 100;
+    display: inline-block;
+    background: red;
+    color:#fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-family: 'Baloo Tamma 2',sans-serif;
+    
+
+}
+.nav-enlace:hover{
+    background: rosybrown;
+    
+}
+nav{
+    z-index: auto;
+    background: rebeccapurple;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around; 
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.nav-boton{
+    background: salmon;
+    color: #fff;
+    padding: 10px 0;
+    border: 2px solid #fff;
+    display: none;
+}
+
+@media (max-width: 500px) {
+    nav{
+        z-index: +100;
+        background: black;
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin: 10px 0;
+    }
+    .nav-boton{
+        display: inline-block;
+    }
+    .desaparece{
+        display: none;
+    }
+}
+
+.subInicio{
+    position: absolute;
 }
